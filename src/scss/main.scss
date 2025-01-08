@@ -1,0 +1,39 @@
+@import "~bootstrap/scss/bootstrap";
+@import "main_nav";
+@import "color_mode_picker";
+
+.c-jumbotron {
+  @extend .bg-body-secondary;
+  @extend .mt-5;
+  @extend .p-5;
+  @extend .rounded-3;
+  @extend .m-auto;
+  @extend .text-center;
+
+  h1 {
+    @extend .display-5;
+    @extend .fw-bold;
+  }
+
+  p {
+    @extend .fs-4;
+  }
+
+
+}
+
+.click-square {
+  padding: $spacer;
+  transition: 0.2s ease;
+  background-color: $primary;
+
+  &:hover {
+    background-color: darken($primary, 10%);
+  }
+
+  &:active {
+    // shrink and darken the square on click
+    transform: scale(0.99);
+    background-color: darken($primary, 20%);
+  }
+}
