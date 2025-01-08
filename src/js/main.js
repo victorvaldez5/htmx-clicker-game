@@ -16,4 +16,4 @@ Alpine.data('clickerGameData', clickerGame)
 
 Alpine.start()
 
-window.htmx = htmx
+window.htmx = htmx;
